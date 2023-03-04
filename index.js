@@ -7,7 +7,7 @@ const weePersonalServer = async (req, res) => {
             "Content-Type": "application/json"
         });
         // default client response
-        res.write("Hi! Sent From The Server!");
+        await res.write("Hi! Sent From The Server!");
         res.end();
     } else {
         res.writeHead(404, {
@@ -17,6 +17,10 @@ const weePersonalServer = async (req, res) => {
             message: "Route not found"
         }));
     }
+
+    return "Done";
 };
+
+console.log("WeePersonalServer:", weePersonalServer);
 
 module.exports = weePersonalServer;
