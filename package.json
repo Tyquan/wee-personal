@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --reporter spec",
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },
@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/Tyquan/wee-personal#readme",
   "dependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
     "nodemon": "^2.0.21"
   }
 }
