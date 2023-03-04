@@ -1,3 +1,3 @@
-#Wee-Personal
+# Wee-Personal
 
-- API setup for Personal and Project Management
+## API setup for Personal and Project Management
