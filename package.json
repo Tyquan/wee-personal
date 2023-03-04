@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -16,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Tyquan/wee-personal/issues"
   },
-  "homepage": "https://github.com/Tyquan/wee-personal#readme"
+  "homepage": "https://github.com/Tyquan/wee-personal#readme",
+  "dependencies": {
+    "nodemon": "^2.0.21"
+  }
 }
